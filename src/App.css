@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.app {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(17, 11, 99);
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    width: 75%;
+    background: linear-gradient(to bottom, rgba(0 ,0, 0, 0), rgb(17, 11, 99)), 
+    url("./assets/millionaire.jpeg") center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pyramid {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.moneyList {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.moneyListItem {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moneyListItem.active {
+    background-color: teal;
+}
+
+.moneyListItemNumber {
+    font-size: 18px;
+    font-weight: 100;
+    width: 30%;
+}
+
+.moneyListeItemAmount {
+    font-size: 20px;
+    font-weight: 300;
 }
